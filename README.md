@@ -5,7 +5,7 @@
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
 
-Welcome to my deep dive into Artificial Intelligence. This repository documents my journey of building and optimizing Neural Network architectures from scratch using **Pure NumPy**, emphasizing mathematical foundations and clinical diagnostic applications.
+Welcome to my structured journey into the heart of Artificial Intelligence. This repository documents my evolution from building Neural Architectures from Scratch using Pure NumPy to mastering the complex world of Deep Learning Optimization..
 
 ---
 
