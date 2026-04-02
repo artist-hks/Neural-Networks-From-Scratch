@@ -12,7 +12,7 @@ Welcome to my structured journey into the heart of Artificial Intelligence. This
 ## 👨‍💻 Author Profile
 <div style="background-color: #f8f9fa; padding: 20px; border-radius: 15px; border: 1px solid #e9ecef;">
     <h3 style="margin-top: 0; color: #2c3e50;">Hemant Sharma (HKS)</h3>
-    <p style="color: #34495e; margin-bottom: 5px;"><b>Computer Science & Engineering Student</b> | Poornima University</p>
+    <p style="color: #34495e; margin-bottom: 5px;"><b>Computer Science & Engineering Student</b> | PIET</p>
     <p style="color: #576574; font-size: 14px;">Focused on <b>Machine Learning</b>, <b>Neural Architectures</b>, and <b>Deep Learning Optimization</b>.</p>
     <div style="margin-top: 10px;">
         <a href="https://www.linkedin.com/in/artisthks" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
