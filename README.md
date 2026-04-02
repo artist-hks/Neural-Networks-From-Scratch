@@ -26,62 +26,190 @@ Welcome to my deep dive into Artificial Intelligence. This repository documents 
 
 ```text
 .
-└── Day1/
-    ├── Dataset/                           # Clinical Data Storage
-    │   └── breast-cancer.csv              # Raw Diagnostic dataset
-    ├── Foundations/                       # Core Mathematical Logic
-    │   └── Neural-Networks.ipynb          # XOR Problem, Activations & Backprop Engine
-    └── Projects/                          # Real-world Implementations
-        ├── Cancer-Standard-Model.ipynb    # Diagnostic Benchmark (Sklearn Data)
-        └── Cancer-Predictions-CSV.ipynb   # End-to-End Pipeline (CSV Data)
+├── 📂 Day-01-The-Foundations/                  # Pure NumPy Implementation
+│   ├── 📂 Dataset/                             # Clinical Data Storage
+│   │   └── breast-cancer.csv                   # Raw Diagnostic dataset
+│   ├── 📂 Foundations/                         # Core Mathematical Logic
+│   │   └── Neural-Networks.ipynb               # XOR Problem & Backprop Engine
+│   └── 📂 Projects/                            # Real-world Implementations
+│       ├── Cancer-Standard-Model.ipynb         # Benchmark (Sklearn Data)
+│       └── Cancer-Predictions-CSV.ipynb        # End-to-End Pipeline (CSV Data)
+│
+└── 📂 Day-02-Optimization-Mastery/             # Advanced Training & Regularization
+    ├── 📂 Dataset/                             # Local CSV Storage
+    │   └── data.csv                            # Clean Diagnostic dataset
+    ├── 📂 Masterclass-Core-Concepts/           # Deep Dive: Optimization Theory
+    │   └── DAY2_MasterClass.ipynb              # L2, Early Stopping & Adam Theory
+    └── 📂 Projects/                            # Practical Applications
+        ├── Clinical_AI_Pipeline_Regularization_Study.ipynb 
+        └── Neural_Noise_Filter.ipynb           # Overfitting & Boundary Visuals
 ```
 
 # 🚀 Day 1: The Foundation Phase
 
-## 🧠 1. Neural Architecture from Scratch
+## 🧠 Neural Architecture from Scratch
 
-In the Foundations module, I architected a fully connected network using only Matrix Calculus.
+In the Foundations module, I designed and implemented a fully connected neural network from scratch using pure **Matrix Calculus**, without relying on high-level frameworks.
 
-- **Forward Propagation:** Multi-layer linear transformations with non-linear mapping.
-- **Activation Suite:** Manual implementation of Sigmoid, ReLU, Tanh, and Leaky ReLU with their respective partial derivatives.
-- **The XOR Test:** Successfully trained a model to learn non-linear decision boundaries, proving the power of hidden layers.
+### 🔧 Core Implementation
+
+| Component            | Description |
+|---------------------|------------|
+| Forward Propagation | Multi-layer linear transformations combined with non-linear activations |
+| Activation Functions | Sigmoid, ReLU, Tanh, Leaky ReLU (with manual derivatives) |
+| Backpropagation     | Gradient computation using Chain Rule |
+| Learning Objective  | Binary classification with non-linear separability |
+
+### 🧪 The XOR Benchmark
+- Successfully trained the network on the **XOR problem**
+- Demonstrated learning of **non-linear decision boundaries**
+- Validated the importance of **hidden layers** in deep learning  
 
 ---
 
-## 🔬 2. Breast Cancer Diagnostic Pipeline
+## 🔬 Breast Cancer Diagnostic Pipeline
 
-Applied the custom NeuralArchitect engine to solve a high-stakes medical classification problem.
+Extended the custom neural network to a real-world **clinical classification task**.
 
-- **Data Engineering:** Manual CSV ingestion, safe cleaning (dropping ID/Nulls), and target encoding.
-- **Exploratory Data Analysis (EDA):**  
-  - Feature correlations via Heatmaps  
-  - Nuclear morphological distributions using Violin Plots
-- **Clinical Accuracy:** Minimized False Negatives to ensure reliable malignancy detection, achieving high precision on test data.
+### 📊 Data Processing
+
+| Step              | Description |
+|------------------|------------|
+| Data Ingestion   | Manual CSV loading and parsing |
+| Cleaning         | Removed ID columns and handled null values |
+| Encoding         | Converted diagnosis labels into numerical format |
+
+### 📈 Exploratory Data Analysis (EDA)
+- Feature relationships analyzed using **Correlation Heatmaps**  
+- Distribution of nuclear features visualized via **Violin Plots**  
+- Identified dominant predictors for malignancy detection  
+
+### 🎯 Clinical Performance
+- Focused on minimizing **False Negatives**  
+- Achieved high precision and reliable classification  
+- Ensured model suitability for **sensitive medical applications**  
+
+---
+
+# 🔥 Day 2: Optimization & Reliability
+
+## 🛡️ Regularization & Optimization Masterclass
+
+Day 2 focused on strengthening model generalization and ensuring robustness for real-world deployment.
+
+---
+
+## ⚙️ Optimization & Regularization Overview
+
+| Technique            | Purpose | Outcome |
+|---------------------|--------|--------|
+| L2 Regularization   | Penalize large weights | Reduced overfitting |
+| Early Stopping      | Stop training at optimal point | Prevented performance degradation |
+| Adam Optimizer      | Adaptive learning rates + momentum | Faster convergence |
+| SGD (Baseline)      | Standard gradient descent | Used for comparison |
+
+---
+
+## 🧱 Key Concepts Implemented
+
+### 1️⃣ The Regularization Shield
+- Applied **L2 Regularization (Alpha)** to control model complexity  
+- Integrated **Early Stopping** based on validation loss  
+- Shifted model behavior from memorization → generalization  
+
+---
+
+### 2️⃣ Adaptive Optimization (Adam vs SGD)
+- Studied internal working of **Adam Optimizer**
+- Compared against **SGD baseline**
+
+#### 🔍 Insights:
+- Adaptive learning rates improved training stability  
+- Momentum accelerated convergence across complex loss surfaces  
+- Reduced sensitivity to poor initialization  
+
+---
+
+### 3️⃣ Clinical Research Pipeline
+
+#### 🔍 High-Fidelity EDA
+- Implemented **Lower Triangle Heatmaps**  
+- Eliminated redundant correlations for clarity  
+
+#### 📊 Decision Boundaries
+- Visualized effect of **alpha values (λ)**  
+- Observed smoother, generalized boundaries with regularization  
+
+#### 🎯 Recall-First Metrics
+
+| Metric        | Importance |
+|--------------|----------|
+| Recall       | Minimizes false negatives (critical in diagnosis) |
+| ROC-AUC      | Measures overall classification capability |
+
+- Prioritized **Sensitivity (Recall)** to ensure no malignancy goes undetected  
 
 ---
 
 ## 🛠️ Technical Stack & Skills
 
-- **Core Math:** Linear Algebra, Matrix Multiplication, Chain Rule (Calculus)
-- **Preprocessing:** Feature Scaling (Standardization), Label Encoding
-- **Evaluation:** Binary Cross-Entropy Loss, Confusion Matrices
-- **Libraries:** NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn (Preprocessing only)
+### 📚 Core Foundations
+
+| Domain          | Concepts |
+|----------------|---------|
+| Mathematics    | Linear Algebra, Chain Rule |
+| Regularization | L2 Penalty Logic |
+| Optimization   | Gradient Descent, Adam |
+
+---
+
+### ⚡ Advanced Training Techniques
+
+- Early Stopping  
+- He Initialization  
+- Xavier Initialization  
+- Adaptive Optimization (Adam)  
+
+---
+
+### 📊 Visualization Toolkit
+
+- Correlation Heatmaps  
+- Loss Curves  
+- Decision Boundary Plots  
+
+---
+
+### 🧰 Libraries Used
+
+| Category        | Tools |
+|----------------|------|
+| Numerical      | NumPy |
+| Data Handling  | Pandas |
+| Visualization  | Matplotlib, Seaborn |
+| ML Utilities   | Scikit-learn |
 
 ---
 
 ## 📝 Roadmap: The Path Ahead
 
-- [x] Day 1: Scratch Neural Network & Binary Classification  
-- [ ] Day 2: Optimization (Adam Optimizer), Regularization (Dropout/L2), and Overfitting Prevention  
-- [ ] Day 3: Scaling to Computer Vision (MNIST Handwritten Digits)  
-- [ ] Day 4: Multi-class Classification & Advanced Metrics  
+| Status | Phase |
+|------|------|
+| ✅ | Day 1: Scratch Neural Network & Binary Classification |
+| ✅ | Day 2: Optimization, Regularization & Overfitting Prevention |
+| ⏳ | Day 3: Computer Vision (MNIST Handwritten Digits) |
+| ⏳ | Day 4: Multi-class Classification & Advanced Metrics |
 
 ---
 
 ## 💡 Quote
 
-> "Deep Learning is not magic; it's a combination of Matrix Calculus and Optimization algorithms." 🚀
+> "A model that memorizes is a database; a model that generalizes is intelligence."
 
 ---
 
-© 2026 Hemant Sharma. All rights reserved.
+<div align="center">
+
+**© 2026 Hemant Sharma (HKS). All Rights Reserved.**
+
+</div>
