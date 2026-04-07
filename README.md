@@ -35,181 +35,114 @@ Welcome to my structured journey into the heart of Artificial Intelligence. This
 │       ├── Cancer-Standard-Model.ipynb         # Benchmark (Sklearn Data)
 │       └── Cancer-Predictions-CSV.ipynb        # End-to-End Pipeline (CSV Data)
 │
-└── 📂 Day-02-Optimization-Mastery/             # Advanced Training & Regularization
-    ├── 📂 Dataset/                             # Local CSV Storage
-    │   └── data.csv                            # Clean Diagnostic dataset
-    ├── 📂 Masterclass-Core-Concepts/           # Deep Dive: Optimization Theory
-    │   └── DAY2_MasterClass.ipynb              # L2, Early Stopping & Adam Theory
-    └── 📂 Projects/                            # Practical Applications
-        ├── Clinical_AI_Pipeline_Regularization_Study.ipynb 
-        └── Neural_Noise_Filter.ipynb           # Overfitting & Boundary Visuals
+├── 📂 Day-02-Optimization-Mastery/             # Advanced Training & Regularization
+│   ├── 📂 Dataset/                             # Local CSV Storage
+│   │   └── data.csv                            # Clean Diagnostic dataset
+│   ├── 📂 Masterclass-Core-Concepts/           # Deep Dive: Optimization Theory
+│   │   └── DAY2_MasterClass.ipynb              # L2, Early Stopping & Adam Theory
+│   └── 📂 Projects/                            # Practical Applications
+│       ├── Clinical_AI_Pipeline_Regularization_Study.ipynb 
+│       └── Neural_Noise_Filter.ipynb           # Overfitting & Boundary Visuals
+│
+└── 📂 Day-03-NLP-Foundations/                  # Text Intelligence & Vectorization
+    ├── 📂 Dataset/                             # Corpus Storage
+    │   ├── IMDB Dataset.csv                    # Sentiment Analysis Data
+    │   └── 📂 Dataset for Multi-Class Emotion Recognition/
+    │       ├── train.txt                       # Training Corpus
+    │       ├── test.txt                        # Final Evaluation Set
+    │       └── val.txt                         # Validation Set
+    ├── 📂 Masterclass-Core-Concepts/           # NLP Pipelines
+    │   └── NLP_DAY3_Text_Preprocessing.ipynb   # Cleaning, Tokenization & TF-IDF
+    └── 📂 Projects/                            # Applied NLP
+        ├── Multi_Class_Emotion_Detector.ipynb  # 6-Class Human Emotion Recognition
+        └── SMS_Spam_Shield.ipynb               # Bayesian Pattern Classification
 ```
 
 # 🚀 Day 1: The Foundation Phase
 
 ## 🧠 Neural Architecture from Scratch
+In this module, I implemented a fully connected neural network using only Matrix Calculus.
 
-In the Foundations module, I designed and implemented a fully connected neural network from scratch using pure **Matrix Calculus**, without relying on high-level frameworks.
-
-### 🔧 Core Implementation
-
-| Component            | Description |
-|---------------------|------------|
-| Forward Propagation | Multi-layer linear transformations combined with non-linear activations |
-| Activation Functions | Sigmoid, ReLU, Tanh, Leaky ReLU (with manual derivatives) |
-| Backpropagation     | Gradient computation using Chain Rule |
-| Learning Objective  | Binary classification with non-linear separability |
-
-### 🧪 The XOR Benchmark
-- Successfully trained the network on the **XOR problem**
-- Demonstrated learning of **non-linear decision boundaries**
-- Validated the importance of **hidden layers** in deep learning  
-
----
-
-## 🔬 Breast Cancer Diagnostic Pipeline
-
-Extended the custom neural network to a real-world **clinical classification task**.
-
-### 📊 Data Processing
-
-| Step              | Description |
-|------------------|------------|
-| Data Ingestion   | Manual CSV loading and parsing |
-| Cleaning         | Removed ID columns and handled null values |
-| Encoding         | Converted diagnosis labels into numerical format |
-
-### 📈 Exploratory Data Analysis (EDA)
-- Feature relationships analyzed using **Correlation Heatmaps**  
-- Distribution of nuclear features visualized via **Violin Plots**  
-- Identified dominant predictors for malignancy detection  
-
-### 🎯 Clinical Performance
-- Focused on minimizing **False Negatives**  
-- Achieved high precision and reliable classification  
-- Ensured model suitability for **sensitive medical applications**  
+- **XOR Benchmark:** Proved the necessity of hidden layers for non-linear separability.
+- **Clinical Pipeline:** Transferred scratch logic to a Breast Cancer Diagnostic task.
+- **Visuals:** Used Correlation Heatmaps and Violin Plots to identify dominant predictors for malignancy.
 
 ---
 
 # 🔥 Day 2: Optimization & Reliability
 
-## 🛡️ Regularization & Optimization Masterclass
+## 🛡️ Regularization Masterclass
+Focusing on generalization to move from "Memorization" to "Intelligence".
 
-Day 2 focused on strengthening model generalization and ensuring robustness for real-world deployment.
-
----
-
-## ⚙️ Optimization & Regularization Overview
-
-| Technique            | Purpose | Outcome |
-|---------------------|--------|--------|
-| L2 Regularization   | Penalize large weights | Reduced overfitting |
-| Early Stopping      | Stop training at optimal point | Prevented performance degradation |
-| Adam Optimizer      | Adaptive learning rates + momentum | Faster convergence |
-| SGD (Baseline)      | Standard gradient descent | Used for comparison |
+- **Techniques:** L2 Regularization (Weight Decay), Early Stopping, and Adam Optimizer.
+- **Insights:** Adaptive learning rates significantly reduced sensitivity to poor weight initialization.
+- **Metrics:** Prioritized Recall to ensure zero False Negatives in clinical diagnosis.
 
 ---
 
-## 🧱 Key Concepts Implemented
+# 📝 Day 3: NLP Foundations & Text Intelligence
 
-### 1️⃣ The Regularization Shield
-- Applied **L2 Regularization (Alpha)** to control model complexity  
-- Integrated **Early Stopping** based on validation loss  
-- Shifted model behavior from memorization → generalization  
+## 🌐 Bridging Human Language and Machine Logic
+Day 3 focused on converting raw human text into structured mathematical vectors.
 
 ---
 
-### 2️⃣ Adaptive Optimization (Adam vs SGD)
-- Studied internal working of **Adam Optimizer**
-- Compared against **SGD baseline**
+## 🧪 Preprocessing Excellence
 
-#### 🔍 Insights:
-- Adaptive learning rates improved training stability  
-- Momentum accelerated convergence across complex loss surfaces  
-- Reduced sensitivity to poor initialization  
-
----
-
-### 3️⃣ Clinical Research Pipeline
-
-#### 🔍 High-Fidelity EDA
-- Implemented **Lower Triangle Heatmaps**  
-- Eliminated redundant correlations for clarity  
-
-#### 📊 Decision Boundaries
-- Visualized effect of **alpha values (λ)**  
-- Observed smoother, generalized boundaries with regularization  
-
-#### 🎯 Recall-First Metrics
-
-| Metric        | Importance |
-|--------------|----------|
-| Recall       | Minimizes false negatives (critical in diagnosis) |
-| ROC-AUC      | Measures overall classification capability |
-
-- Prioritized **Sensitivity (Recall)** to ensure no malignancy goes undetected  
+| Step          | Technique          | HKS Engineering Rationale |
+|--------------|------------------|--------------------------|
+| Cleaning      | Regex Stripping   | Removed HTML/URLs to prevent noise |
+| Sanitization  | `str.maketrans`  | High-speed punctuation removal for large datasets |
+| Normalization | Lemmatization     | Context-aware root extraction (Better → Good) |
+| Vectorization | TF-IDF           | Penalized common filler words mathematically |
 
 ---
 
-## 🛠️ Technical Stack & Skills
+## 🛠️ Applied NLP Projects
 
-### 📚 Core Foundations
-
-| Domain          | Concepts |
-|----------------|---------|
-| Mathematics    | Linear Algebra, Chain Rule |
-| Regularization | L2 Penalty Logic |
-| Optimization   | Gradient Descent, Adam |
+- **SMS Spam Shield:** Bayesian fraud detection system (**98% Accuracy**)
+- **Multi-Class Emotion Recognition:** Extended from binary classification to 6 human emotions
 
 ---
 
-### ⚡ Advanced Training Techniques
+# 🛠️ Technical Stack & Skills
 
-- Early Stopping  
-- He Initialization  
-- Xavier Initialization  
-- Adaptive Optimization (Adam)  
+## 📚 Specialized Domains
+
+- **NLP:** Tokenization, Lemmatization, Stopword Removal, TF-IDF, Naive Bayes  
+- **DL Optimization:** Adam, SGD with Momentum, L2 Regularization, Early Stopping  
+- **Foundations:** Matrix Calculus, Backpropagation, Activation Functions (ReLU, Tanh, Sigmoid)  
 
 ---
 
-### 📊 Visualization Toolkit
+## 📊 Visualization Toolkit
 
+- Seaborn / Matplotlib  
 - Correlation Heatmaps  
-- Loss Curves  
-- Decision Boundary Plots  
+- WordClouds  
+- Confusion Matrices  
+- Decision Boundaries  
 
 ---
 
-### 🧰 Libraries Used
+# 📝 Roadmap: The Path Ahead
 
-| Category        | Tools |
-|----------------|------|
-| Numerical      | NumPy |
-| Data Handling  | Pandas |
-| Visualization  | Matplotlib, Seaborn |
-| ML Utilities   | Scikit-learn |
-
----
-
-## 📝 Roadmap: The Path Ahead
-
-| Status | Phase |
-|------|------|
-| ✅ | Day 1: Scratch Neural Network & Binary Classification |
-| ✅ | Day 2: Optimization, Regularization & Overfitting Prevention |
-| ⏳ | Day 3: Computer Vision (MNIST Handwritten Digits) |
-| ⏳ | Day 4: Multi-class Classification & Advanced Metrics |
+| Status | Phase | Target Concept |
+|------|------|--------------|
+| ✅ | Day 1: Foundations | Scratch Neural Nets & XOR Logic |
+| ✅ | Day 2: Optimization Mastery | Adam, Regularization & Early Stopping |
+| ✅ | Day 3: NLP Foundations | Text Preprocessing & Vectorization |
+| ⏳ | Day 4: Computer Vision | CNNs, MNIST & Feature Maps |
+| ⏳ | Day 5: Advanced CV | Data Augmentation & Transfer Learning |
 
 ---
 
-## 💡 Quote
+# 💡 Quote
 
 > "A model that memorizes is a database; a model that generalizes is intelligence."
 
 ---
 
 <div align="center">
-
-**© 2026 Hemant Sharma (HKS). All Rights Reserved.**
-
+© 2026 Hemant Sharma (HKS). All Rights Reserved.
 </div>
