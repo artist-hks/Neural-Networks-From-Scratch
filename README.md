@@ -44,18 +44,27 @@ Welcome to my structured journey into the heart of Artificial Intelligence. This
 │       ├── Clinical_AI_Pipeline_Regularization_Study.ipynb 
 │       └── Neural_Noise_Filter.ipynb           # Overfitting & Boundary Visuals
 │
-└── 📂 Day-03-NLP-Foundations/                  # Text Intelligence & Vectorization
-    ├── 📂 Dataset/                             # Corpus Storage
-    │   ├── IMDB Dataset.csv                    # Sentiment Analysis Data
-    │   └── 📂 Dataset for Multi-Class Emotion Recognition/
-    │       ├── train.txt                       # Training Corpus
-    │       ├── test.txt                        # Final Evaluation Set
-    │       └── val.txt                         # Validation Set
-    ├── 📂 Masterclass-Core-Concepts/           # NLP Pipelines
-    │   └── NLP_DAY3_Text_Preprocessing.ipynb   # Cleaning, Tokenization & TF-IDF
-    └── 📂 Projects/                            # Applied NLP
-        ├── Multi_Class_Emotion_Detector.ipynb  # 6-Class Human Emotion Recognition
-        └── SMS_Spam_Shield.ipynb               # Bayesian Pattern Classification
+|── 📂 Day-03-NLP-Foundations/                  # Text Intelligence & Vectorization
+|    ├── 📂 Dataset/                             # Corpus Storage
+|    │   ├── IMDB Dataset.csv                    # Sentiment Analysis Data
+|    │   └── 📂 Dataset for Multi-Class Emotion Recognition/
+|    │       ├── train.txt                       # Training Corpus
+|    │       ├── test.txt                        # Final Evaluation Set
+|    │       └── val.txt                         # Validation Set
+|    ├── 📂 Masterclass-Core-Concepts/           # NLP Pipelines
+|    │   └── NLP_DAY3_Text_Preprocessing.ipynb   # Cleaning, Tokenization & TF-IDF
+|    └── 📂 Projects/                            # Applied NLP
+|        ├── Multi_Class_Emotion_Detector.ipynb  # 6-Class Human Emotion Recognition
+|       └── SMS_Spam_Shield.ipynb               # Bayesian Pattern Classification
+│
+└── 📂 Day-04-Computer-Vision/                 # CNNs & Visual Intelligence
+    ├── 📂 Dataset/                            # Visual Data Storage
+    │   └── mnist_test.csv                     # Digit benchmarking set
+    ├── 📂 MasterClass-Concepts/               # Deep Dive: Spatial Hierarchies
+    │   └── DAY_4_CNN_MNIST.ipynb              # Kernels, Pooling & Convolution Theory
+    └── 📂 Projects/                           # Applied Vision Projects
+        ├── Neural_X_Ray_Analysis/             # Feature Map Interpretability
+        └── Real_World_Color_Object_Recognition/ # CIFAR-10 Engine (RGB)
 ```
 
 # 🚀 Day 1: The Foundation Phase
@@ -87,62 +96,83 @@ Day 3 focused on converting raw human text into structured mathematical vectors.
 
 ---
 
-## 🧪 Preprocessing Excellence
+# 🖼️ Day 4: Computer Vision & Visual Intelligence
 
-| Step          | Technique          | HKS Engineering Rationale |
-|--------------|------------------|--------------------------|
-| Cleaning      | Regex Stripping   | Removed HTML/URLs to prevent noise |
-| Sanitization  | `str.maketrans`  | High-speed punctuation removal for large datasets |
-| Normalization | Lemmatization     | Context-aware root extraction (Better → Good) |
-| Vectorization | TF-IDF           | Penalized common filler words mathematically |
+## 🌐 Transitioning to Spatial Data Hierarchies
+
+In Day 4, I bridged the gap between linear data and **Spatial Intelligence** by implementing **Convolutional Neural Networks (CNNs)**.
 
 ---
 
-## 🛠️ Applied NLP Projects
+## 🧪 Vision Engineering Excellence
 
-- **SMS Spam Shield:** Bayesian fraud detection system (**98% Accuracy**)
-- **Multi-Class Emotion Recognition:** Extended from binary classification to 6 human emotions
+| Module              | Technique            | HKS Engineering Rationale |
+|--------------------|--------------------|--------------------------|
+| Feature Extraction | Conv2D Kernels     | Capturing local patterns (edges, textures) instead of raw pixels |
+| Downsampling       | MaxPooling         | Achieving translation invariance and reducing computational load |
+| Stability          | Batch Normalization| Stabilizing internal covariate shift during deep training |
+| Interpretability   | Activation Maps    | Visualizing hidden layers to prove hierarchical learning (Lines → Shapes) |
 
 ---
 
-# 🛠️ Technical Stack & Skills
+## 🛠️ Applied Computer Vision Projects
 
-## 📚 Specialized Domains
+### 🎯 Real-World Color Recognition (CIFAR-10)
+Engineered a deep CNN architecture to classify **10 object categories** in high-variance RGB image data.
 
-- **NLP:** Tokenization, Lemmatization, Stopword Removal, TF-IDF, Naive Bayes  
-- **DL Optimization:** Adam, SGD with Momentum, L2 Regularization, Early Stopping  
-- **Foundations:** Matrix Calculus, Backpropagation, Activation Functions (ReLU, Tanh, Sigmoid)  
+### 🔬 Neural "X-Ray" Analysis
+Developed a visualization engine to inspect intermediate layers, demonstrating how CNNs learn progressively:
+> Edges → Patterns → Shapes → Objects
+
+---
+
+## 🛠️ Technical Stack & Skills
+
+### 📚 Specialized Domains
+- **Computer Vision:** CNNs, Feature Mapping, Padding/Stride Logic, Pooling  
+- **Natural Language Processing:** Tokenization, Lemmatization, TF-IDF, Naive Bayes  
+- **Deep Learning Optimization:** Adam, SGD with Momentum, L2 Regularization, Early Stopping  
+- **Foundations:** Matrix Calculus, Backpropagation, Activation Functions  
 
 ---
 
 ## 📊 Visualization Toolkit
 
-- Seaborn / Matplotlib  
-- Correlation Heatmaps  
+### 🔍 Spatial Visualizations
+- Neural Activation Heatmaps (Viridis / Magma)
+- Filter & Feature Maps
+
+### 📈 Statistical Visualizations
+- Confusion Matrix  
+- Precision-Recall Reports  
+- Loss & Accuracy Curves  
+
+### 📝 NLP Visualizations
 - WordClouds  
-- Confusion Matrices  
-- Decision Boundaries  
+- TF-IDF Distribution Plots  
 
 ---
 
-# 📝 Roadmap: The Path Ahead
+## 📝 Roadmap: The Path Ahead
 
-| Status | Phase | Target Concept |
-|------|------|--------------|
-| ✅ | Day 1: Foundations | Scratch Neural Nets & XOR Logic |
-| ✅ | Day 2: Optimization Mastery | Adam, Regularization & Early Stopping |
-| ✅ | Day 3: NLP Foundations | Text Preprocessing & Vectorization |
-| ⏳ | Day 4: Computer Vision | CNNs, MNIST & Feature Maps |
-| ⏳ | Day 5: Advanced CV | Data Augmentation & Transfer Learning |
+| Status | Phase                         | Target Concept |
+|--------|------------------------------|----------------|
+| ✅     | Day 1: Foundations           | Scratch Neural Networks & XOR Logic |
+| ✅     | Day 2: Optimization Mastery  | Adam, Regularization & Early Stopping |
+| ✅     | Day 3: NLP Foundations       | Text Preprocessing & Vectorization |
+| ✅     | Day 4: Computer Vision       | CNNs, CIFAR-10 & Neural X-Ray |
+| ⏳     | Day 5: Sequence Models       | RNN, LSTM & GRU (Temporal Intelligence) |
 
 ---
 
-# 💡 Quote
+## 💡 Quote
 
 > "A model that memorizes is a database; a model that generalizes is intelligence."
 
 ---
 
 <div align="center">
-© 2026 Hemant Sharma (HKS). All Rights Reserved.
+
+© 2026 **Hemant Sharma (HKS)**. All Rights Reserved.
+
 </div>
