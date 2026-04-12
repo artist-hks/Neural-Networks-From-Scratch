@@ -57,14 +57,21 @@ Welcome to my structured journey into the heart of Artificial Intelligence. This
 |        ├── Multi_Class_Emotion_Detector.ipynb  # 6-Class Human Emotion Recognition
 |       └── SMS_Spam_Shield.ipynb               # Bayesian Pattern Classification
 │
-└── 📂 Day-04-Computer-Vision/                 # CNNs & Visual Intelligence
-    ├── 📂 Dataset/                            # Visual Data Storage
-    │   └── mnist_test.csv                     # Digit benchmarking set
-    ├── 📂 MasterClass-Concepts/               # Deep Dive: Spatial Hierarchies
-    │   └── DAY_4_CNN_MNIST.ipynb              # Kernels, Pooling & Convolution Theory
-    └── 📂 Projects/                           # Applied Vision Projects
-        ├── Neural_X_Ray_Analysis/             # Feature Map Interpretability
-        └── Real_World_Color_Object_Recognition/ # CIFAR-10 Engine (RGB)
+|── 📂 Day-04-Computer-Vision/                 # CNNs & Visual Intelligence
+|    ├── 📂 Dataset/                            # Visual Data Storage
+|    │   └── mnist_test.csv                     # Digit benchmarking set
+|    ├── 📂 MasterClass-Concepts/               # Deep Dive: Spatial Hierarchies
+|    │   └── DAY_4_CNN_MNIST.ipynb              # Kernels, Pooling & Convolution Theory
+|    └── 📂 Projects/                           # Applied Vision Projects
+|        ├── Neural_X_Ray_Analysis/             # Feature Map Interpretability
+|       └── Real_World_Color_Object_Recognition/ # CIFAR-10 Engine (RGB)
+│
+└── 📂 Day-05-Sequence-Models/             # RNN, LSTM & GRU (Temporal Intelligence)
+    ├── 📂 MasterClass-Concepts/           # Deep Dive: The Architecture of Memory
+    │   └── Day_5_Sequence_Models.ipynb    # RNN vs LSTM vs GRU Comparative Study
+    └── 📂 Projects/                       # Applied Sequential Architectures
+        ├── Cyber_Sentinel.ipynb           # Bidirectional LSTM for Sentiment Analysis
+        └── Quantum_Forecaster.ipynb       # Stacked GRU for Time-Series Prediction
 ```
 
 # 🚀 Day 1: The Foundation Phase
@@ -126,48 +133,73 @@ Developed a visualization engine to inspect intermediate layers, demonstrating h
 
 ---
 
-## 🛠️ Technical Stack & Skills
+## ⏳ Day 05: Sequence Models & Temporal Intelligence
+
+### 🌐 Mastering the Architecture of Memory
+Day 5 marked the transition from **Spatial Intelligence (CNNs)** to **Temporal Intelligence**, enabling models to process data where the order and time-context of information are critical.
+
+---
+
+## 🧪 Sequence Engineering Excellence
+
+| Module | Technique | HKS Engineering Rationale |
+|--------|----------|--------------------------|
+| Short-Term Memory | Simple RNN | Investigating the hidden state and the Vanishing Gradient problem |
+| Gated Memory | LSTM | Using Forget/Input/Output gates to retain long-term dependencies |
+| Efficient Gating | GRU | Streamlined architecture for faster training on numerical sequences |
+| Contextual Depth | Bidirectional LSTM | Processing text from both ends for "360-degree" semantic understanding |
+
+---
+
+## 🛠️ Day 05: Applied Projects
+
+### 🛡️ Project 2: Cyber-Sentinel (Advanced NLP)
+- **Architecture:** Bidirectional LSTM + Global Max Pooling  
+- **Insight:** Captured deep contextual sentiment in human language by analyzing sentences forward and backward  
+- **Outcome:** Successfully identified complex emotional patterns in long-sequence text data  
+
+---
+
+### 📉 Project 1: Quantum-Forecaster (Time-Series)
+- **Architecture:** Stacked GRU Layers  
+- **Insight:** Implemented a many-to-one regression model using a sliding temporal window *(Lookback: 50 steps)*  
+- **Outcome:** Proven capability in forecasting complex numerical signals containing both trend and seasonality  
+
+---
+
+## 🛠️ Technical Stack & Skills (Updated)
 
 ### 📚 Specialized Domains
+- **Sequence Modeling:** RNN, LSTM, GRU, Bidirectional Architectures, Time-Series Windowing  
 - **Computer Vision:** CNNs, Feature Mapping, Padding/Stride Logic, Pooling  
-- **Natural Language Processing:** Tokenization, Lemmatization, TF-IDF, Naive Bayes  
-- **Deep Learning Optimization:** Adam, SGD with Momentum, L2 Regularization, Early Stopping  
-- **Foundations:** Matrix Calculus, Backpropagation, Activation Functions  
+- **NLP:** Word Embeddings, Tokenization, Lemmatization, TF-IDF  
+- **Optimization:** Adam, L2 Regularization, Early Stopping, Dropout  
 
 ---
 
 ## 📊 Visualization Toolkit
 
-### 🔍 Spatial Visualizations
-- Neural Activation Heatmaps (Viridis / Magma)
-- Filter & Feature Maps
-
-### 📈 Statistical Visualizations
-- Confusion Matrix  
-- Precision-Recall Reports  
-- Loss & Accuracy Curves  
-
-### 📝 NLP Visualizations
-- WordClouds  
-- TF-IDF Distribution Plots  
+### 📉 Temporal Visualizations
+- Sequential Loss Convergence *(MSE/MAE)*  
+- Predicted vs. Actual Trend Plots *(Forecasting)*  
+- Validation Accuracy Curves *(Sentiment Analysis)*  
 
 ---
 
 ## 📝 Roadmap: The Path Ahead
 
-| Status | Phase                         | Target Concept |
-|--------|------------------------------|----------------|
-| ✅     | Day 1: Foundations           | Scratch Neural Networks & XOR Logic |
-| ✅     | Day 2: Optimization Mastery  | Adam, Regularization & Early Stopping |
-| ✅     | Day 3: NLP Foundations       | Text Preprocessing & Vectorization |
-| ✅     | Day 4: Computer Vision       | CNNs, CIFAR-10 & Neural X-Ray |
-| ⏳     | Day 5: Sequence Models       | RNN, LSTM & GRU (Temporal Intelligence) |
+| Status | Phase | Target Concept |
+|--------|------|--------------|
+| ✅ | Day 1: Foundations | Scratch Neural Nets & XOR Logic |
+| ✅ | Day 2: Optimization Mastery | Adam, Regularization & Early Stopping |
+| ✅ | Day 3: NLP Foundations | Text Preprocessing & Vectorization |
+| ✅ | Day 4: Computer Vision | CNNs, CIFAR-10 & Neural X-Ray |
+| ✅ | Day 5: Sequence Models | RNN, LSTM & GRU (Temporal Intelligence) |
 
 ---
 
 ## 💡 Quote
-
-> "A model that memorizes is a database; a model that generalizes is intelligence."
+> *"A model that memorizes is a database; a model that generalizes is intelligence."*
 
 ---
 
